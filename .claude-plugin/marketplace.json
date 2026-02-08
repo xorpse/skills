@@ -1,0 +1,23 @@
+{
+  "name": "xorpse-agent-skills",
+  "owner": {
+    "name": "Sam L. Thomas",
+    "email": "s@ghost.sh"
+  },
+  "metadata": {
+    "description": "Skills for opinionated (tasteful) development practices",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "rust-skills",
+      "description": "Collection of Rust development skills including style guidelines and linting",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./rust-style-guidelines",
+        "./rust-style-lint"
+      ]
+    }
+  ]
+}
