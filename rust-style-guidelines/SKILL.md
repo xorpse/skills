@@ -49,7 +49,7 @@ This is also correct usage:
 
 This is NOT correct usage:
     ```rust
-    use std::collections::{collections::{HashMap, HashSet}, path::{Path, PathBuf}};
+    use std::{collections::{HashMap, HashSet}, path::{Path, PathBuf}};
     ```
 
 This is NOT correct usage:
@@ -58,7 +58,7 @@ This is NOT correct usage:
     use std::collections::HashSet;
     ```
 
-- Use `cargo fmt` to format your code.
+- Use `cargo fmt -- --config imports_granularity=Module,group_imports=StdExternalCrate` to format your code.
 
 - For module layout, use mod.rs and directories when a module may have sub-modules or module_name.rs for leaf modules. Do not use new-style module paths.
 
